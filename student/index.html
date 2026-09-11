@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        منصة الأستاذة شيماء العباسي
+    </title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="mmm-2.css"
+    >
+</head>
+
+<body>
+
+<!-- =====================================================
+     AUTHENTICATION
+===================================================== -->
+
+<section
+    class="auth-screen"
+    id="authScreen"
+>
+
+    <div class="auth-decoration auth-decoration-one"></div>
+    <div class="auth-decoration auth-decoration-two"></div>
+
+    <div class="auth-layout">
+
+        <!-- LEFT SIDE -->
+
+        <div class="auth-brand-panel">
+
+            <div class="auth-brand">
+
+                <div class="auth-brand-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+                    <strong>
+                        منصة الأستاذة شيماء
+                    </strong>
+
+                    <span>
+                        العباسي التعليمية
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="auth-brand-content">
+
+                <span class="auth-small-title">
+                    منصتك التعليمية
+                </span>
+
+                <h1>
+                    تعلّم بطريقة
+                    <strong>
+                        أسهل وأفضل
+                    </strong>
+                </h1>
+
+                <p>
+                    تابع دروسك واختباراتك وملفاتك
+                    وحصصك الأونلاين من مكان واحد.
+                </p>
+
+                <div class="auth-benefits">
+
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            محتوى خاص بمجموعتك
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            دروس واختبارات تفاعلية
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            متابعة مباشرة مع الأستاذة
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="auth-brand-footer">
+                © منصة الأستاذة شيماء العباسي
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="auth-form-panel">
+
+            <!-- LOGIN -->
+
+            <div
+                class="auth-box"
+                id="loginBox"
+            >
+
+                <div class="auth-box-header">
+
+                    <div class="mobile-auth-logo">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <span>
+                        أهلاً بك من جديد
+                    </span>
+
+                    <h2>
+                        تسجيل الدخول
+                    </h2>
+
+                    <p>
+                        ادخل إلى حسابك لمتابعة دراستك.
+                    </p>
+
+                </div>
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+
+                        <label>
+                            اسم الطالب
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-user-graduate"></i>
+
+                            <input
+                                type="text"
+                                id="loginName"
+                                placeholder="اكتب اسمك بالكامل"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>
+                            الرقم الأساسي للطالب أو اسم المستخدم
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="loginPhone"
+                                inputmode="numeric"
+                                placeholder="رقم الطالب"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>
+                            كلمة المرور
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                placeholder="أدخل كلمة المرور"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="loginPassword"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <label class="remember-option">
+
+                            <input
+                                type="checkbox"
+                                id="rememberLogin"
+                            >
+
+                            <span>
+                                تذكرني
+                            </span>
+
+                        </label>
+
+                        <button
+                            type="button"
+                            class="forgot-button"
+                            id="forgotPasswordButton"
+                        >
+                            نسيت كلمة المرور؟
+                        </button>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        <span>
+                            تسجيل الدخول
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+
+                    <span>
+                        ليس لديك حساب؟
+                    </span>
+
+                    <button
+                        type="button"
+                        id="showRegister"
+                    >
+                        إنشاء حساب جديد
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- REGISTER -->
+
+            <div
+                class="auth-box hidden"
+                id="registerBox"
+            >
+
+                <div class="auth-box-header">
+
+                    <button
+                        type="button"
+                        class="back-auth-button"
+                        id="backToLogin"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                        تسجيل الدخول
+                    </button>
+
+                    <span>
+                        خطوة جديدة
+                    </span>
+
+                    <h2>
+                        إنشاء حساب الطالب
+                    </h2>
+
+                    <p>
+                        أدخل بيانات الطالب وولي الأمر بدقة.
+                    </p>
+
+                </div>
+
+                <form id="registerForm">
+
+                    <div class="form-grid">
+
+                        <div class="input-group full-width">
+
+                            <label>
+                                اسم الطالب
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                                <input
+                                    type="text"
+                                    id="registerName"
+                                    placeholder="الاسم بالكامل"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                الرقم الأساسي للطالب
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="registerPhone"
+                                    inputmode="numeric"
+                                    placeholder="01xxxxxxxxx"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                رقم ولي الأمر
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-user-shield"></i>
+
+                                <input
+                                    type="tel"
+                                    id="registerGuardianPhone"
+                                    inputmode="numeric"
+                                    placeholder="01xxxxxxxxx"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                المرحلة الدراسية
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-school"></i>
+
+                                <select
+                                    id="registerStage"
+                                    required
+                                >
+                                    <option value="">
+                                        اختر المرحلة
+                                    </option>
+
+                                    <option value="ابتدائي">
+                                        ابتدائي
+                                    </option>
+
+                                    <option value="إعدادي">
+                                        إعدادي
+                                    </option>
+
+                                    <option value="ثانوي">
+                                        ثانوي
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                الصف الدراسي
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-book"></i>
+
+                                <select
+                                    id="registerGrade"
+                                    required
+                                    disabled
+                                >
+                                    <option value="">
+                                        اختر المرحلة أولاً
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group full-width">
+
+                            <label>
+                                المجموعة
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                                <select
+                                    id="registerGroup"
+                                    required
+                                    disabled
+                                >
+                                    <option value="">
+                                        اختر الصف أولاً
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                كلمة المرور
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    placeholder="6 أحرف أو أكثر"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="registerPassword"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                تأكيد كلمة المرور
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="registerConfirmPassword"
+                                    placeholder="أعد كلمة المرور"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="registerConfirmPassword"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <label class="terms-option">
+
+                        <input
+                            type="checkbox"
+                            id="acceptTerms"
+                            required
+                        >
+
+                        <span>
+                            أوافق على صحة البيانات المدخلة
+                            وعلى استخدام الحساب داخل المنصة.
+                        </span>
+
+                    </label>
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        إنشاء الحساب
+                        <i class="fa-solid fa-user-plus"></i>
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+
+                    <span>
+                        لديك حساب بالفعل؟
+                    </span>
+
+                    <button
+                        type="button"
+                        id="showLogin"
+                    >
+                        تسجيل الدخول
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PLATFORM
+===================================================== -->
+
+<div
+    class="platform hidden"
+    id="platform"
+>
+
+    <!-- SIDEBAR -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="brand-text">
+                <strong>
+                    منصة الأستاذة شيماء
+                </strong>
+
+                <span>
+                    واجهة الطالب
+                </span>
+            </div>
+
+            <button
+                class="mobile-close"
+                id="closeSidebar"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="student-profile-card">
+
+            <div class="student-avatar">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <div class="student-profile-text">
+
+                <strong id="sidebarStudentName">
+                    الطالب
+                </strong>
+
+                <span id="sidebarStudentGroup">
+                    لم يتم اختيار مجموعة
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-label">
+            المنصة التعليمية
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <button
+                class="nav-item active"
+                data-page="overview"
+            >
+
+                <span class="nav-icon purple">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <span>
+                    الرئيسية
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="lessons"
+            >
+
+                <span class="nav-icon turquoise">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+
+                <span>
+                    الدروس
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="tests"
+            >
+
+                <span class="nav-icon green">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </span>
+
+                <span>
+                    الاختبارات
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="files"
+            >
+
+                <span class="nav-icon blue">
+                    <i class="fa-solid fa-folder-open"></i>
+                </span>
+
+                <span>
+                    الملفات والمذكرات
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="classes"
+            >
+
+                <span class="nav-icon red">
+                    <i class="fa-solid fa-video"></i>
+                </span>
+
+                <span>
+                    الحصص الأونلاين
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="notifications"
+            >
+
+                <span class="nav-icon purple">
+                    <i class="fa-regular fa-bell"></i>
+                </span>
+
+                <span>
+                    الإشعارات
+                </span>
+
+                <span
+                    class="nav-badge"
+                    id="notificationBadge"
+                >
+                    0
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="chat"
+            >
+
+                <span class="nav-icon turquoise">
+                    <i class="fa-regular fa-comments"></i>
+                </span>
+
+                <span>
+                    المحادثات
+                </span>
+
+            </button>
+
+        </nav>
+
+        <div class="sidebar-label">
+            الحساب
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <button
+                class="nav-item"
+                data-page="payments"
+            >
+
+                <span class="nav-icon green">
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+
+                <span>
+                    المدفوعات
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item"
+                data-page="settings"
+            >
+
+                <span class="nav-icon blue">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+
+                <span>
+                    الإعدادات
+                </span>
+
+            </button>
+
+            <button
+                class="nav-item logout-nav"
+                id="logoutButton"
+            >
+
+                <span class="nav-icon red">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </span>
+
+                <span>
+                    تسجيل الخروج
+                </span>
+
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom-card">
+
+            <div class="sidebar-bottom-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div>
+
+                <strong>
+                    الدعم والتواصل
+                </strong>
+
+                <span>
+                    تواصل مع الأستاذة من المحادثات
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div class="topbar-right">
+
+                <button
+                    class="mobile-menu"
+                    id="openSidebar"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+
+                    <h1 id="pageTitle">
+                        الرئيسية
+                    </h1>
+
+                    <p id="pageSubtitle">
+                        أهلاً بك في منصتك التعليمية
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="topbar-left">
+
+                <button
+                    class="top-icon-button"
+                    data-page="notifications"
+                >
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span
+                        class="top-notification-dot"
+                        id="topNotificationDot"
+                    ></span>
+                </button>
+
+                <button
+                    class="top-icon-button"
+                    data-page="settings"
+                >
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+                <div class="top-avatar">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- OVERVIEW -->
+
+            <section
+                class="page active"
+                id="page-overview"
+            >
+
+                <div class="hero">
+
+                    <div class="hero-content">
+
+                        <span class="hero-kicker">
+                            منصة الأستاذة شيماء العباسي
+                        </span>
+
+                        <h2>
+                            أهلاً بك
+                            <span id="heroStudentName">
+                                يا طالب
+                            </span>
+                        </h2>
+
+                        <p>
+                            كل محتواك التعليمي في مكان واحد.
+                            ابدأ الدرس، تابع اختباراتك،
+                            وادخل حصصك الأونلاين بسهولة.
+                        </p>
+
+                        <div class="hero-actions">
+
+                            <button
+                                class="hero-button white"
+                                data-page="lessons"
+                            >
+                                <i class="fa-solid fa-play"></i>
+                                مشاهدة الدروس
+                            </button>
+
+                            <button
+                                class="hero-button transparent"
+                                data-page="tests"
+                            >
+                                <i class="fa-solid fa-clipboard-check"></i>
+                                الاختبارات
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-mini-card">
+
+                        <span>
+                            المجموعة الحالية
+                        </span>
+
+                        <strong id="heroGroupName">
+                            لم يتم الاختيار
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="group-toolbar">
+
+                    <div class="toolbar-title">
+
+                        <div class="toolbar-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                المجموعة الدراسية
+                            </strong>
+
+                            <span>
+                                يتم عرض المحتوى حسب مجموعتك
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <select
+                        class="group-select"
+                        id="overviewGroupSelect"
+                    ></select>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-content">
+
+                            <span>
+                                الدروس
+                            </span>
+
+                            <strong id="statLessons">
+                                0
+                            </strong>
+
+                            <small>
+                                درس متاح
+                            </small>
+
+                        </div>
+
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-content">
+
+                            <span>
+                                الاختبارات
+                            </span>
+
+                            <strong id="statTests">
+                                0
+                            </strong>
+
+                            <small>
+                                اختبار متاح
+                            </small>
+
+                        </div>
+
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-content">
+
+                            <span>
+                                الملفات
+                            </span>
+
+                            <strong id="statFiles">
+                                0
+                            </strong>
+
+                            <small>
+                                ملف ومذكرة
+                            </small>
+
+                        </div>
+
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-content">
+
+                            <span>
+                                الحصص
+                            </span>
+
+                            <strong id="statClasses">
+                                0
+                            </strong>
+
+                            <small>
+                                حصة أونلاين
+                            </small>
+
+                        </div>
+
+                        <div class="stat-icon red">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section">
+
+                    <div class="section-head">
+
+                        <div>
+
+                            <h3>
+                                وصول سريع
+                            </h3>
+
+                            <p>
+                                الأقسام الأكثر استخداماً
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="quick-grid">
+
+                        <button
+                            class="quick-card"
+                            data-page="lessons"
+                        >
+
+                            <span class="quick-icon purple">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+
+                            <strong>
+                                ابدأ الدرس
+                            </strong>
+
+                            <span>
+                                شاهد المحتوى التعليمي
+                            </span>
+
+                            <i class="fa-solid fa-arrow-left quick-arrow"></i>
+
+                        </button>
+
+                        <button
+                            class="quick-card"
+                            data-page="tests"
+                        >
+
+                            <span class="quick-icon green">
+                                <i class="fa-solid fa-pen"></i>
+                            </span>
+
+                            <strong>
+                                الاختبارات
+                            </strong>
+
+                            <span>
+                                راجع اختباراتك
+                            </span>
+
+                            <i class="fa-solid fa-arrow-left quick-arrow"></i>
+
+                        </button>
+
+                        <button
+                            class="quick-card"
+                            data-page="files"
+                        >
+
+                            <span class="quick-icon blue">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </span>
+
+                            <strong>
+                                المذكرات
+                            </strong>
+
+                            <span>
+                                افتح ملفاتك
+                            </span>
+
+                            <i class="fa-solid fa-arrow-left quick-arrow"></i>
+
+                        </button>
+
+                        <button
+                            class="quick-card"
+                            data-page="classes"
+                        >
+
+                            <span class="quick-icon red">
+                                <i class="fa-solid fa-video"></i>
+                            </span>
+
+                            <strong>
+                                الحصص المباشرة
+                            </strong>
+
+                            <span>
+                                تابع حصصك
+                            </span>
+
+                            <i class="fa-solid fa-arrow-left quick-arrow"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="two-column">
+
+                    <div class="section">
+
+                        <div class="section-head">
+
+                            <div>
+
+                                <h3>
+                                    أحدث الدروس
+                                </h3>
+
+                                <p>
+                                    آخر الدروس الخاصة بك
+                                </p>
+
+                            </div>
+
+                            <button
+                                class="text-button"
+                                data-page="lessons"
+                            >
+                                عرض الكل
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="preview-list"
+                            id="latestLessons"
+                        ></div>
+
+                    </div>
+
+                    <div class="section">
+
+                        <div class="section-head">
+
+                            <div>
+
+                                <h3>
+                                    الحصص القادمة
+                                </h3>
+
+                                <p>
+                                    المواعيد القادمة
+                                </p>
+
+                            </div>
+
+                            <button
+                                class="text-button"
+                                data-page="classes"
+                            >
+                                عرض الكل
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="preview-list"
+                            id="latestClasses"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- LESSONS -->
+
+            <section
+                class="page"
+                id="page-lessons"
+            >
+
+                <div class="page-banner purple-banner">
+
+                    <div>
+                        <span>
+                            المحتوى التعليمي
+                        </span>
+
+                        <h2>
+                            الدروس
+                        </h2>
+
+                        <p>
+                            الدروس الخاصة بمجموعتك.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                </div>
+
+                <div class="page-tools">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="lessonSearch"
+                            placeholder="ابحث عن درس..."
+                        >
+
+                    </div>
+
+                    <select
+                        class="group-select"
+                        id="lessonGroupSelect"
+                    ></select>
+
+                </div>
+
+                <div
+                    class="cards-grid"
+                    id="lessonsGrid"
+                ></div>
+
+            </section>
+
+
+            <!-- TESTS -->
+
+            <section
+                class="page"
+                id="page-tests"
+            >
+
+                <div class="page-banner green-banner">
+
+                    <div>
+
+                        <span>
+                            التقييم
+                        </span>
+
+                        <h2>
+                            الاختبارات
+                        </h2>
+
+                        <p>
+                            اختبارات مجموعتك الدراسية.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                </div>
+
+                <div class="page-tools">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="testSearch"
+                            placeholder="ابحث عن اختبار..."
+                        >
+
+                    </div>
+
+                    <select
+                        class="group-select"
+                        id="testGroupSelect"
+                    ></select>
+
+                </div>
+
+                <div
+                    class="cards-grid"
+                    id="testsGrid"
+                ></div>
+
+            </section>
+
+
+            <!-- FILES -->
+
+            <section
+                class="page"
+                id="page-files"
+            >
+
+                <div class="page-banner blue-banner">
+
+                    <div>
+
+                        <span>
+                            المحتوى
+                        </span>
+
+                        <h2>
+                            الملفات والمذكرات
+                        </h2>
+
+                        <p>
+                            المذكرات والملفات التعليمية.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                </div>
+
+                <div class="page-tools">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="fileSearch"
+                            placeholder="ابحث عن ملف..."
+                        >
+
+                    </div>
+
+                    <select
+                        class="group-select"
+                        id="fileGroupSelect"
+                    ></select>
+
+                </div>
+
+                <div
+                    class="cards-grid"
+                    id="filesGrid"
+                ></div>
+
+            </section>
+
+
+            <!-- CLASSES -->
+
+            <section
+                class="page"
+                id="page-classes"
+            >
+
+                <div class="page-banner red-banner">
+
+                    <div>
+
+                        <span>
+                            التدريس المباشر
+                        </span>
+
+                        <h2>
+                            الحصص الأونلاين
+                        </h2>
+
+                        <p>
+                            تابع مواعيد حصصك المباشرة.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-video"></i>
+
+                </div>
+
+                <div
+                    class="classes-grid"
+                    id="classesGrid"
+                ></div>
+
+            </section>
+
+
+            <!-- NOTIFICATIONS -->
+
+            <section
+                class="page"
+                id="page-notifications"
+            >
+
+                <div class="page-banner purple-banner">
+
+                    <div>
+
+                        <span>
+                            التواصل
+                        </span>
+
+                        <h2>
+                            الإشعارات
+                        </h2>
+
+                        <p>
+                            آخر التنبيهات والأخبار.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </div>
+
+                <div
+                    class="notifications-list"
+                    id="notificationsList"
+                ></div>
+
+            </section>
+
+
+            <!-- CHAT -->
+
+            <section
+                class="page"
+                id="page-chat"
+            >
+
+                <div class="page-banner turquoise-banner">
+
+                    <div>
+
+                        <span>
+                            التواصل
+                        </span>
+
+                        <h2>
+                            المحادثات
+                        </h2>
+
+                        <p>
+                            تواصل مع الأستاذة.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-regular fa-comments"></i>
+
+                </div>
+
+                <div class="chat-layout">
+
+                    <div class="chat-info-card">
+
+                        <div class="chat-big-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>
+                            تواصل مع الأستاذة
+                        </h3>
+
+                        <p>
+                            أرسل استفسارك وسيظهر في المحادثات.
+                        </p>
+
+                        <div class="chat-info-line">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>
+                                المحادثة متاحة من داخل المنصة
+                            </span>
+                        </div>
+
+                        <div class="chat-info-line">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>
+                                رسائلك مرتبطة بحساب الطالب
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="chat-card">
+
+                        <div class="chat-card-head">
+
+                            <div class="chat-user">
+
+                                <div class="chat-avatar">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        الأستاذة شيماء العباسي
+                                    </strong>
+
+                                    <span>
+                                        المعلمة
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <span class="online-pill">
+                                المنصة التعليمية
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="messages"
+                            id="messages"
+                        ></div>
+
+                        <form
+                            class="chat-form"
+                            id="chatForm"
+                        >
+
+                            <input
+                                type="text"
+                                id="chatInput"
+                                placeholder="اكتب رسالتك..."
+                                autocomplete="off"
+                            >
+
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAYMENTS -->
+
+            <section
+                class="page"
+                id="page-payments"
+            >
+
+                <div class="page-banner green-banner">
+
+                    <div>
+
+                        <span>
+                            الإدارة المالية
+                        </span>
+
+                        <h2>
+                            المدفوعات
+                        </h2>
+
+                        <p>
+                            تابع حالة حسابك المالي.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                </div>
+
+                <div class="payment-top">
+
+                    <div class="payment-summary">
+
+                        <span>
+                            حالة الحساب
+                        </span>
+
+                        <strong id="paymentStatus">
+                            غير متاح
+                        </strong>
+
+                        <small id="paymentMessage">
+                            سيتم عرض البيانات هنا.
+                        </small>
+
+                    </div>
+
+                    <div class="payment-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                </div>
+
+                <div class="payment-grid">
+
+                    <div class="payment-info-card">
+
+                        <div class="payment-card-icon purple">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+
+                        <h3>
+                            الدفع عن طريق InstaPay
+                        </h3>
+
+                        <p>
+                            استخدم رابط الدفع الرسمي المرتبط بالمنصة.
+                        </p>
+
+                        <button
+                            class="primary-button"
+                            id="instaPayButton"
+                        >
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            فتح InstaPay
+                        </button>
+
+                    </div>
+
+                    <div class="payment-info-card">
+
+                        <div class="payment-card-icon green">
+                            <i class="fa-solid fa-shield-check"></i>
+                        </div>
+
+                        <h3>
+                            متابعة السداد
+                        </h3>
+
+                        <p>
+                            حالة السداد يتم تحديثها من نظام المنصة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SETTINGS -->
+
+            <section
+                class="page"
+                id="page-settings"
+            >
+
+                <div class="page-banner blue-banner">
+
+                    <div>
+
+                        <span>
+                            الحساب
+                        </span>
+
+                        <h2>
+                            الإعدادات
+                        </h2>
+
+                        <p>
+                            تحكم في بيانات الطالب والمظهر.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </div>
+
+                <div class="settings-grid">
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-head">
+
+                            <div class="settings-card-icon purple">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    بيانات الطالب
+                                </h3>
+
+                                <p>
+                                    بيانات الحساب الأساسية.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="profile-information">
+
+                            <div>
+                                <span>
+                                    اسم الطالب
+                                </span>
+
+                                <strong id="profileName">
+                                    -
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    الرقم الأساسي
+                                </span>
+
+                                <strong id="profilePhone">
+                                    -
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    رقم ولي الأمر
+                                </span>
+
+                                <strong id="profileGuardian">
+                                    -
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-head">
+
+                            <div class="settings-card-icon green">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    المجموعة الدراسية
+                                </h3>
+
+                                <p>
+                                    اختر المجموعة الخاصة بك.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                المجموعة
+                            </label>
+
+                            <select
+                                class="group-select full"
+                                id="settingsGroupSelect"
+                            ></select>
+
+                        </div>
+
+                        <button
+                            class="primary-button full"
+                            id="saveGroupButton"
+                        >
+                            حفظ المجموعة
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-head">
+
+                            <div class="settings-card-icon blue">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    المظهر
+                                </h3>
+
+                                <p>
+                                    خصص شكل المنصة.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="setting-label">
+                            الخلفية
+                        </div>
+
+                        <div class="appearance-options">
+
+                            <button
+                                class="appearance-option"
+                                data-theme="light"
+                            >
+
+                                <span class="appearance-preview light"></span>
+
+                                <div>
+                                    <strong>
+                                        فاتح
+                                    </strong>
+
+                                    <small>
+                                        مظهر أبيض
+                                    </small>
+                                </div>
+
+                            </button>
+
+                            <button
+                                class="appearance-option"
+                                data-theme="dark"
+                            >
+
+                                <span class="appearance-preview dark"></span>
+
+                                <div>
+                                    <strong>
+                                        داكن
+                                    </strong>
+
+                                    <small>
+                                        مظهر أسود
+                                    </small>
+                                </div>
+
+                            </button>
+
+                        </div>
+
+                        <div class="setting-label">
+                            اللون الأساسي
+                        </div>
+
+                        <div class="color-options">
+
+                            <button
+                                class="color-dot purple active"
+                                data-color="#7c3aed"
+                            ></button>
+
+                            <button
+                                class="color-dot turquoise"
+                                data-color="#0f766e"
+                            ></button>
+
+                            <button
+                                class="color-dot green"
+                                data-color="#15803d"
+                            ></button>
+
+                            <button
+                                class="color-dot blue"
+                                data-color="#2563eb"
+                            ></button>
+
+                            <button
+                                class="color-dot red"
+                                data-color="#dc2626"
+                            ></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-head">
+
+                            <div class="settings-card-icon red">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    أمان الحساب
+                                </h3>
+
+                                <p>
+                                    خيارات أمان الحساب.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="danger-outline-button full"
+                            id="logoutSettingsButton"
+                        >
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            تسجيل الخروج
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =====================================================
+     LESSON MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="lessonModal"
+>
+
+    <div
+        class="modal-overlay"
+        data-close-lesson
+    ></div>
+
+    <div class="modal-box large">
+
+        <div class="modal-head">
+
+            <div>
+
+                <span>
+                    المحتوى التعليمي
+                </span>
+
+                <h3 id="modalLessonTitle">
+                    الدرس
+                </h3>
+
+            </div>
+
+            <button
+                class="modal-close"
+                data-close-lesson
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="lesson-video-wrapper">
+
+            <video
+                id="lessonVideo"
+                controls
+                playsinline
+            ></video>
+
+            <div
+                class="video-placeholder"
+                id="videoPlaceholder"
+            >
+
+                <i class="fa-solid fa-video"></i>
+
+                <strong>
+                    فيديو الدرس
+                </strong>
+
+                <span>
+                    سيتم تشغيل الفيديو عند توفر رابط الفيديو.
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="lesson-modal-description">
+
+            <span>
+                وصف الدرس
+            </span>
+
+            <p id="modalLessonDescription">
+                لا يوجد وصف.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FORGOT PASSWORD MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="forgotModal"
+>
+
+    <div
+        class="modal-overlay"
+        data-close-forgot
+    ></div>
+
+    <div class="modal-box">
+
+        <div class="modal-head">
+
+            <div>
+
+                <span>
+                    استعادة الحساب
+                </span>
+
+                <h3>
+                    نسيت كلمة المرور؟
+                </h3>
+
+            </div>
+
+            <button
+                class="modal-close"
+                data-close-forgot
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="forgot-content">
+
+            <div class="forgot-icon">
+                <i class="fa-solid fa-key"></i>
+            </div>
+
+            <p>
+                في النسخة التجريبية، يتم تغيير كلمة المرور من
+                خلال بيانات المتصفح. لاحقاً يتم ربط هذه الخطوة
+                بخدمة استعادة الحساب في الـBackend.
+            </p>
+
+            <input
+                class="simple-input"
+                type="tel"
+                id="forgotPhone"
+                placeholder="الرقم الأساسي للطالب"
+            >
+
+            <input
+                class="simple-input"
+                type="password"
+                id="forgotNewPassword"
+                placeholder="كلمة المرور الجديدة"
+                minlength="6"
+            >
+
+            <button
+                class="primary-button full"
+                id="resetPasswordButton"
+            >
+                تغيير كلمة المرور
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    class="toast"
+    id="toast"
+>
+
+    <div class="toast-icon">
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div>
+
+        <strong id="toastTitle">
+            تم
+        </strong>
+
+        <span id="toastMessage">
+            تمت العملية بنجاح.
+        </span>
+
+    </div>
+
+</div>
+
+
+<script src="../api-config.js"></script>
+<script src="../static-bridge.js"></script>
+<script src="app-2.js"></script>
+
+</body>
+</html>

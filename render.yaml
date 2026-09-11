@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: miss-shaimaa
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python manage.py migrate
+    startCommand: gunicorn config.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: SECURE_SSL_REDIRECT
+        value: "True"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: miss-shaimaa-db
+          property: connectionString
+
+databases:
+  - name: miss-shaimaa-db
+    databaseName: miss_shaimaa
+    user: miss_shaimaa
