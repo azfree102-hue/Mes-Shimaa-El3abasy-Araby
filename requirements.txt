@@ -4,3 +4,4 @@ psycopg[binary]>=3.2
 django-cors-headers>=4.4
 dj-database-url>=2.2
 gunicorn>=22.0
+whitenoise
