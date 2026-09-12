@@ -82,3 +82,6 @@ if not DEBUG:
 # Render's proxy). Off by default so local testing over plain HTTP
 # (like http://127.0.0.1:8080) isn't rejected by the browser.
 SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'False').lower() == 'true'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
